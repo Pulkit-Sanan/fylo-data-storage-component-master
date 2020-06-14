@@ -1,0 +1,59 @@
+* {
+   margin: 0;
+   padding: 0;
+   }
+
+body{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: hsl(243, 100%, 93%);
+}
+
+.db-back{
+  background-color: hsl(229, 56%, 26%);
+  border-radius: 10px;
+}
+
+.content{
+  width: 100%;
+  padding: 0 17%;
+}
+
+/* BACKGROUND */
+.background{
+  height: 100vh;
+  background-image: 
+  url(../images/bg-desktop.svg);
+  background-size: 100% 50%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-color: hsla(229, 57%, 11%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* LEFT BOX */
+#left-box{
+  border-top-right-radius: 100px;
+  padding: 30px;
+  margin-right: 20px;
+}
+
+.logo{
+  padding: 10px 7px 30px;
+}
+
+.deck{
+  width: max-content;
+  display: flex;
+}
+
+.icon{
+  padding: 10px;
+  margin: 7px;
+  background-color: hsl(229, 57%, 11%);
+  border-radius: 10%;
+  flex: 1;
+}
