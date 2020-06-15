@@ -17,7 +17,6 @@ body {
 
 .content {
   width: 67vw;
-  /* padding: 0 17vw; */
 }
 
 /* BACKGROUND */
@@ -61,12 +60,22 @@ body {
   padding: 37.5px 30px;
 }
 
-.popup{
+.zero {
+  font-weight: 700;
+}
+
+.thousand {
+  text-align: right;
+  font-weight: 700;
+}
+
+/* POPUP */
+.popup {
   position: absolute;
   right: 45px;
   top: -40px;
   background-color: white;
-  color:hsl(229, 7%, 55%);
+  color: hsl(229, 7%, 55%);
   border-radius: 10px 10px 0 10px;
   width: max-content;
   padding: 5px 15px;
@@ -86,12 +95,13 @@ body {
   right: 0px;
 }
 
-.popup-text{
+.popup-text {
   font-size: 2.5rem;
   font-weight: 700;
   color: black;
 }
 
+/* PROGRESS */
 .progress {
   background-color: hsla(229, 57%, 11%);
   height: 15px;
@@ -109,7 +119,7 @@ body {
   border-radius: 7px;
 }
 
-.progress-dot{
+.progress-dot {
   position: absolute;
   background-color: white;
   border-radius: 100%;
@@ -119,11 +129,28 @@ body {
   right: 1px;
 }
 
-.zero {
-  font-weight: 700;
-}
+@media (max-width: 1080px) {
 
-.thousand {
-  text-align: right;
-  font-weight: 700;
+  .background {
+    background-image: url(../images/bg-mobile.svg);
+    background-size: cover;
+  }
+
+  .db-back {
+    margin: 10px;
+  }
+
+  .content {
+    width: 95vw;
+  }
+
+  .popup {
+    border-radius: 10px;
+    left: 25vw;
+    top: 130px;
+  }
+
+  .popup::after {
+    visibility: hidden;
+  }
 }
